@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Detail - Personal Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .navbar-custom {
+            background-color: #000;
+            padding: 10px 20px;
+        }
+        .navbar-custom .navbar-item {
+            color: #fff;
+            margin-right: 20px;
+        }
+        .project-title {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .project-title h1 {
+            font-size: 2rem;
+        }
+        .project-title p {
+            font-size: 1.2rem;
+            color: #666;
+        }
+        .spacer {
+            height: 50px;
+        }
+        .content-section img {
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .content-section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            border-left: 4px solid #000;
+            padding-left: 10px;
+        }
+        .project-overview, .project-challenge, .project-results {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            background-color: #fff;
+            margin-bottom: 20px;
+        }
+        .project-details {
+            display: flex;
+            flex-direction: column;
+        }
+        .project-details p {
+            margin-bottom: 10px;
+        }
+        .button-primary {
+            background-color: #000;
+            color: #fff;
+            border-radius: 8px;
+            padding: 10px 20px;
+            display: inline-flex;
+            align-items: center;
+        }
+        .button-primary span {
+            margin-right: 10px;
+        }
+        .content-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .content-grid img {
+            flex: 1 1 calc(50% - 20px);
+            border-radius: 8px;
+        }
+        .pagination {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        .pagination a {
+            color: #000;
+            font-size: 1rem;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar-custom">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#">
+                <img src="https://via.placeholder.com/112x28" alt="Logo">
+            </a>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="#">
+                    Home
+                </a>
+                <a class="navbar-item" href="#">
+                    About
+                </a>
+                <a class="navbar-item" href="#">
+                    Services
+                </a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link" href="#">
+                        Portfolio
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="#">
+                            Portfolio 1
+                        </a>
+                        <a class="navbar-item" href="#">
+                            Portfolio 2
+                        </a>
+                        <a class="navbar-item" href="#">
+                            Portfolio 3
+                        </a>
+                    </div>
+                </div>
+                <a class="navbar-item" href="#">
+                    Articles
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Section -->
+    <section class="section">
+        <div class="container">
+            <!-- Project Title -->
+            <div class="project-title" data-aos="fade-up">
+                <h1>XModel</h1>
+                <p>Brand needed help with branding</p>
+            </div>
+
+            <!-- Project Image -->
+            <div class="columns">
+                <div class="column">
+                    <img src="https://via.placeholder.com/800x600" alt="Project Image" class="image">
+                </div>
+            </div>
+
+            <div class="spacer"></div>
+
+            <!-- Project Overview -->
+            <div class="columns">
+                <div class="column is-one-third" data-aos="fade-up">
+                    <div class="project-overview">
+                        <div class="project-details">
+                            <p><strong>Client</strong><br>SixtyEditions</p>
+                            <p><strong>Timeframe</strong><br>October 23 - December 23</p>
+                            <p><strong>Services</strong><br>Naming, Branding, Graphic Design, Web Design and Development</p>
+                            <a href="#" class="button-primary">
+                                <span>See Live</span>
+                                <span class="icon">
+                                    <i class="fas fa-arrow-up-right"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column" data-aos="fade-up">
+                    <div class="project-overview">
+                        <h2>Project Overview</h2>
+                        <p>Maecenas venenatis mauris ac viverra luctus. In a nunc lacinia, semper felis at, sagittis turpis. Morbi ante sem, bibendum id volutpat eget, posuere et nunc. Donec porta turpis nec turpis volutpat tempus. Morbi ornare odio non ullamcorper molestie. Nunc varius, leo eget vehicula elementum, diam diam tempor dolor, faucibus eleifend orci leo eget nisl. Duis tincidunt gravida augue nec viverra. Curabitur dapibus elit vel ipsum sollicitudin ullamcorper.</p>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipiscing elit dolor sit amet consectetur.</li>
+                            <li>Fusce ultricies vehicula adipiscing imperdiet euismod natoque penatibus vehicula adipiscing.</li>
+                            <li>Donec ultricies vehicula adipiscing imperdiet euismod natoque penatibus parturient.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="spacer"></div>
+
+            <!-- Project Images -->
+            <div class="columns is-multiline">
+                <div class="column is-half" data-aos="fade-up">
+                    <img src="https://via.placeholder.com/400x400" alt="Project Image 1" class="image">
+                </div>
+                <div class="column is-half" data-aos="fade-up">
+                    <img src="https://via.placeholder.com/400x400" alt="Project Image 2" class="image">
+                </div>
+                <div class="column is-half" data-aos="fade-up">
+                    <img src="https://via.placeholder.com/400x400" alt="Project Image 3" class="image">
+                </div>
+                <div class="column is-half" data-aos="fade-up">
+                    <img src="https://via.placeholder.com/400x400" alt="Project Image 4" class="image">
+                </div>
+            </div>
+
+            <div class="spacer"></div>
+
+            <!-- Additional Project Image -->
+            <div class="columns">
+                <div class="column" data-aos="fade-up">
+                    <img src="https://via.placeholder.com/800x600" alt="Additional Project Image" class="image">
+                </div>
+            </div>
+
+            <div class="spacer"></div>
+
+            <!-- Challenge and Results -->
+            <div class="columns">
+                <div class="column" data-aos="fade-up">
+                    <div class="project-challenge">
+                        <h2>Challenge</h2>
+                        <p>Maecenas venenatis mauris ac viverra luctus. In a nunc lacinia, semper felis at, sagittis turpis. Morbi ante sem, bibendum id volutpat eget, posuere et nunc. Donec porta turpis nec turpis volutpat tempus. Morbi ornare odio non ullamcorper molestie. Nunc varius, leo eget vehicula elementum, diam diam tempor dolor, faucibus eleifend orci leo eget nisl. Duis tincidunt gravida augue nec viverra. Curabitur dapibus elit vel ipsum sollicitudin ullamcorper.</p>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipiscing elit dolor sit amet consectetur.</li>
+                            <li>Fusce ultricies vehicula adipiscing imperdiet euismod natoque penatibus vehicula adipiscing.</li>
+                            <li>Donec ultricies vehicula adipiscing imperdiet euismod natoque penatibus parturient.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="spacer"></div>
+
+            <div class="columns">
+                <div class="column" data-aos="fade-up">
+                    <div class="project-results">
+                        <h2>Results</h2>
+                        <p>Maecenas venenatis mauris ac viverra luctus. In a nunc lacinia, semper felis at, sagittis turpis. Morbi ante sem, bibendum id volutpat eget, posuere et nunc. Donec porta turpis nec turpis volutpat tempus. Morbi ornare odio non ullamcorper molestie. Nunc varius, leo eget vehicula elementum, diam diam tempor dolor, faucibus eleifend orci leo eget nisl. Duis tincidunt gravida augue nec viverra. Curabitur dapibus elit vel ipsum sollicitudin ullamcorper.</p>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipiscing elit dolor sit amet consectetur.</li>
+                            <li>Fusce ultricies vehicula adipiscing imperdiet euismod natoque penatibus vehicula adipiscing.</li>
+                            <li>Donec ultricies vehicula adipiscing imperdiet euismod natoque penatibus parturient.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <nav class="pagination">
+                <div>
+                    <a href="#" rel="prev">Previous</a>
+                </div>
+                <div>
+                    <a href="#" rel="next">Next</a>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
