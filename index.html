@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: white;
+        }
+        .profile-card, .main-content, .project-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            background-color: #fff;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        }
+        .profile-card img {
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .profile-card h2 {
+            margin-bottom: 5px;
+            font-size: 1.5rem;
+        }
+        .profile-card p {
+            color: #666;
+        }
+        .tag-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .tag-list .tag {
+            background-color: #000;
+            color: #fff;
+            border-radius: 20px;
+            padding: 5px 10px;
+        }
+        .project-card img {
+            border-radius: 8px;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        .navbar {
+            background-color: #000;
+        }
+        .navbar-menu .navbar-item {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#">
+                <img src="https://via.placeholder.com/112x28" alt="Logo">
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="#">
+                    Home
+                </a>
+                <a class="navbar-item" href="#">
+                    About
+                </a>
+                <a class="navbar-item" href="#">
+                    Services
+                </a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link" href="#">
+                        Portfolio
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="#">
+                            Portfolio 1
+                        </a>
+                        <a class="navbar-item" href="#">
+                            Portfolio 2
+                        </a>
+                        <a class="navbar-item" href="#">
+                            Portfolio 3
+                        </a>
+                    </div>
+                </div>
+                <a class="navbar-item" href="#">
+                    Articles
+                </a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Main Section -->
+    <section class="section">
+        <div class="container">
+            <div class="columns is-8">
+                <div class="column is-4">
+                    <!-- Profile Card -->
+                    <div class="profile-card" data-aos="fade-right">
+                        <figure class="image is-128x128">
+                            <img src="https://via.placeholder.com/128" alt="Profile Image">
+                        </figure>
+                        <h2>Oliver Muller 👀</h2>
+                        <p>Product Designer | Design Speaker</p>
+                        <p>Based in London, UK</p>
+                        <div class="tag-list">
+                            <span class="tag">Product Designer</span>
+                            <span class="tag">Design Speaker</span>
+                            <span class="tag">Based in London, UK</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-8">
+                    <!-- Main Content -->
+                    <div class="main-content title" data-aos="fade-left">
+                        <h2>As a product designer, I specialize in creating magical visual identities for digital products. I believe that a stunning design starts with common values, open communication, and respect for your audience.</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="columns is-multiline">
+                <!-- Project Cards -->
+                <div class="column is-6" data-aos="fade-up">
+                    <div class="project-card">
+                        <h3 class="title is-4">Technical voyage</h3>
+                        <p>SixtyEditions</p>
+                        <figure class="image">
+                            <img src="https://via.placeholder.com/400" alt="Project Image">
+                        </figure>
+                    </div>
+                </div>
+                <div class="column is-6" data-aos="fade-up">
+                    <div class="project-card">
+                        <h3 class="title is-4">Unpowered balloon flight</h3>
+                        <p>Analogue</p>
+                        <figure class="image">
+                            <img src="https://via.placeholder.com/400" alt="Project Image">
+                        </figure>
+                    </div>
+                </div>
+                <div class="column is-6" data-aos="fade-up">
+                    <div class="project-card">
+                        <h3 class="title is-4">Hand of seeking</h3>
+                        <p>KnownOne</p>
+                        <figure class="image">
+                            <img src="https://via.placeholder.com/400" alt="Project Image">
+                        </figure>
+                    </div>
+                </div>
+                <div class="column is-6" data-aos="fade-up">
+                    <div class="project-card">
+                        <h3 class="title is-4">Multi dimension in 3D</h3>
+                        <p>XModel</p>
+                        <figure class="image">
+                            <img src="https://via.placeholder.com/400" alt="Project Image">
+                        </figure>
+                    </div>
+                </div>
+                <div class="column is-6" data-aos="fade-up">
+                    <div class="project-card">
+                        <h3 class="title is-4">Into the origin</h3>
+                        <p>Obey and Gross</p>
+                        <figure class="image">
+                            <img src="https://via.placeholder.com/400" alt="Project Image">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
